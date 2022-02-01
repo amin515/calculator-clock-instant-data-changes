@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator, Analog Clock, Instant data cahnge</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h2 class="Instant">Instant Data Change</h2>
+    <div class="container">
+        <div class="row w-50 mx-auto bg-dark mt-5">
+            <div class="col my-5">
+                <div class="card">
+                    <div class="card-body">
+                        <input type="checkbox" class="skills" id="PHP" value="PHP"><label for="PHP">PHP</label> <br>
+                        <input type="checkbox" class="skills" id="LARAVEL" value="LARAVEL"><label
+                            for="PHP">LARAVEL</label> <br>
+                        <input type="checkbox" class="skills" id="DJANGO" value="DJANGO"><label
+                            for="DJANGO">DJANGO</label> <br>
+                        <input type="checkbox" class="skills" id="WORDPRESS" value="WORDPRESS"><label
+                            for="WORDPRESS">WORDPRESS</label> <br>
+                        <input type="checkbox" class="skills" id="PYTHON" value="PYTHON"><label
+                            for="PYTHON">PYTHON</label> <br>
+                        <input type="checkbox" class="skills" id="IOS" value="IOS"><label for="IOS">IOS</label> <br>
+                        <input type="checkbox" class="skills" id="ANDROID" value="ANDROID"><label
+                            for="ANDROID">ANDROID</label> <br>
+                        <input type="checkbox" class="skills" id="MERN" value="MERN"><label for="MERN">MERN</label>
+                    </div>
+                    <ul class="list-group all-items">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- end instant data change -->
+    <!-- anlog clock start -->
+
+    <h2 class="Analog">Analog Clock Design 1</h2>
+    <div class="container-one">
+
+
+
+        <div class="clock">
+            <div class="num num1">
+                <div>1</div>
+            </div>
+            <h3>
+                citizen
+            </h3>
+
+            <div class="num num2">
+                <div>2</div>
+            </div>
+
+            <div class="num num3">
+                <div>3</div>
+            </div>
+
+            <div class="num num4">
+                <div>4</div>
+            </div>
+
+            <div class="num num5">
+                <div>5</div>
+            </div>
+
+            <div class="num num6">
+                <div>6</div>
+            </div>
+
+            <div class="num num7">
+                <div>7</div>
+            </div>
+
+            <div class="num num8">
+                <div>8</div>
+            </div>
+
+            <div class="num num9">
+                <div>9</div>
+            </div>
+
+            <div class="num num10">
+                <div>10</div>
+            </div>
+
+            <div class="num num11">
+                <div>11</div>
+            </div>
+
+            <div class="num num12">
+                <div>12</div>
+            </div>
+
+            <div class="hand" id="sec">
+                <div class="sec"></div>
+            </div>
+            <div class="hand" id="min">
+                <div class="min"></div>
+            </div>
+            <div class="hand" id="hour">
+                <div class="hour"></div>
+            </div>
+            <div class="clock1">
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Analog clock design 1 end -->
+    <!-- Analog clock design 3 start -->
+
+    <h2 class="Analog-2">Analog Clock Design 2</h2>
+    <div class="container-two">
+
+        <div class="clock-two">
+            <div class="s" id="s"></div>
+            <div class="m" id="m"></div>
+            <div class="h" id="h"></div>
+        </div>
+    </div>
+    <!-- Analog clok design 2 end -->
+    <!-- calculator start -->
+    <h2 class="moni">Calculator</h2>
+    <div class="calculator shadow mx-auto">
+
+        <div class="monitor">
+            <div class="top-monitor"></div>
+            <div class="main-monitor"></div>
+        </div>
+        <div class="button-clear">
+            <button id="ac" onclick="alclear()">AC</button>
+            <button id="clear" onclick="back()">C</button>
+            <button id="on">ON</button>
+            <button id="off">OFF</button>id
+        </div>
+       
+        <div class="button">
+           
+            <button onclick="dataValue(7)">7</button>
+            <button onclick="dataValue(8)">8</button>
+            <button onclick="dataValue(9)">9</button>
+            <button onclick="dataValue('/')">/</button>
+            <button onclick="dataValue(4)">4</button>
+            <button onclick="dataValue(5)">5</button>
+            <button onclick="dataValue(6)">6</button>
+            <button onclick="dataValue('*')">*</button>
+            <button onclick="dataValue(1)">1</button>
+            <button onclick="dataValue(2)">2</button>
+            <button onclick="dataValue(3)">3</button>
+            <button onclick="dataValue('+')">+</button>
+            <button onclick="dataValue(0)">0</button>
+            <button onclick="dataValue('.')">.</button>
+            <button onclick="final_result()">=</button>
+            <button onclick="dataValue('-')">-</button>
+        </div>
+    </div>
+
+    <script src="./function.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
